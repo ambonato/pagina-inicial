@@ -1,2 +1,2 @@
 # pagina-inicial
-Mi primer pagina
+Mi primer pagina de prueba
