@@ -1,0 +1,99 @@
+* {
+  margin: 0 auto;  
+  border: 0;
+  box-sizing: border-box;
+  padding: 0%;
+}
+body{
+  background-color: bisque;
+}
+   
+.box_title{
+  width: 100vw;
+  height: 10vh;
+  position: relative;
+  display: grid;
+  background-color: black;
+}
+
+#title_main{
+  position: absolute;
+  top: 30%;
+  left:11vh;
+  color: red;      
+}
+  
+#logo{
+  position: absolute;
+  left: 0%;
+  max-width: 5vw;
+  height: 10vh;
+}
+
+
+.menu_main{
+  width: 10vw;
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left:11vh;
+  /*display: flex;*/
+  /*position: relative;*/
+  list-style:none; 
+  right: 10vw;
+  transform: rotate(-90deg);
+  align-items: center;
+}
+.links a{
+  color: #ffffff;
+  
+}
+.links{
+  
+  text-align: center;
+  box-shadow: 7px 1px 10px 0 #ffffff;
+  width: 4em;
+  height: 2em;
+  border-radius: 1em;
+  transform: rotate(45deg);
+/*  padding: 0.5em 1em;*/
+  margin: 1em 0em 1em 1em;
+  justify-content: center
+}
+a:hover{
+  color: blue;
+}
+
+.aside_menu{
+  position: absolute;
+  width: 20vw;
+  right: 0%;
+  align-items: center;
+  background-color: blue;
+}
+
+.main_box{
+  width: 80vw;
+  position: absolute;
+  background-color: blueviolet;
+  height: 90vh;
+  color: #ffffff;
+}
+
+#titulo_aside{
+  display: flex;
+  width: 20vw;
+  height: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div_ads{
+  width: 20vw;
+  height: 60vh;
+  position: absolute;
+  background-color: orange;
+  align-content: center;
+  right: 0%;
+  bottom: 0%;
+}
