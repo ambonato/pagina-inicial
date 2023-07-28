@@ -1,0 +1,125 @@
+* {
+  margin: 0 ;  
+  border: 0;
+  box-sizing: border-box;
+  padding: 0%;
+  font-family: 'Tektur', cursive;
+}
+.container_body{
+  display: grid;
+  grid-template-rows: 2.5vw 5vw 41.25vh 41.25vh 10vw;
+  grid-template-columns: 33vw 1fr 1fr ; 
+  text-align: center;
+  
+
+  
+}
+.container{
+  border: solid black 1px;
+}
+
+/*Panel*/
+.container_header{ 
+  grid-column: 1 / span 3;    
+  grid-row: 1 / 2;
+  
+  background-color: blueviolet;
+  
+}
+.div_header{
+  width: 100%;
+  height: 2.5vh;
+  position: fixed;
+  background-color: rgb(43, 226, 73);
+}
+/*fin panel*/
+
+/* nav*/
+.container_nav{ 
+  display: grid;
+  grid-template-rows: 5vw;
+  grid-template-columns: 1fr 60px 1fr;/*arreglar*/
+  grid-column: 1 / span 3;    
+  grid-row: 2 / 3;
+  background-color: black;  
+}
+
+.logo{
+  grid-column: 2 / 3;
+  filter: drop-shadow(1px 1px 2px #ffff);
+  max-height: 100% ;
+}
+
+.titulo{
+  position: relative;
+  /*display: inline-block;*/
+  color: red;
+  left: 50%;
+  top: 100%;
+}
+.div_title{
+  position: absolute;
+  top: 10%;
+  background-color: aquamarine;
+  grid-column: 1 / span 1;
+  
+}
+
+.imagen_logo{
+  grid-column: 2 / span 1;
+}
+
+.menu{
+  display: flex ;
+  grid-column: 3 / span 1;
+}
+
+/*fin nav*/
+
+.container_footer{ 
+  grid-column: 1 / span 3;    
+  grid-row: 6 / 7;
+  background-color: aqua;
+  
+}
+.container_aside{ 
+  grid-column: 1 / 4;    
+  grid-row: 4 / spand 1;
+  background-color: palevioletred;  
+}
+.container_ads{ 
+  grid-column: 1 / 4;    
+  grid-row: 5 / span 1;
+  background-color: yellow;
+}
+
+.container_main{
+  grid-column: 1 / 5;    
+  grid-row: 3 / span 1;
+  background-color: red;}
+
+
+  /*Resoluciones mas grandes*/
+
+@media screen and (min-width: 820px){
+  
+
+.container_aside{ 
+  grid-column: 3 / 4;    
+  grid-row: 3 / 4;
+  background-color: palevioletred;  
+}
+.container_ads{ 
+  grid-column: 3 / 4;    
+  grid-row: 4 / 6;
+  background-color: yellow;
+  
+  
+}
+
+.container_main{
+  grid-column: 1 / 3;    
+  grid-row: 3 / span 3;
+  background-color: red;
+  
+}}
