@@ -151,6 +151,35 @@ color: var(--color_main);
   
 }
 
+/*tooltips*/
+.tooltip_menu{
+  position: absolute;
+  background-color: var(--color_fondo3);
+  line-height: 20px;
+  z-index: 500;
+  text-align: center;
+  color: var(--color_main);
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  top: 1vh;
+ visibility: hidden;
+}
+
+.tooltip_menu::after{
+  content: "";
+  display: block;
+  border-top: 7px solid var(--color_fondo3);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  bottom: -7px;
+}
+
+ .links:hover > span{
+  visibility: visible;
+} 
+
 /*Main*/
 .container_main{
   width: 100%;
@@ -200,7 +229,7 @@ color: var(--color_main);
 
 .bloque_img1{
 
-  background-image: url(../img/regnum.png);
+  background-image: url(/Test/img/regnum.png);
 }
 .bloque_img2{
   background-image: url(../img/guildwars.png);
