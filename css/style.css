@@ -160,6 +160,10 @@ color: var(--color_main);
   background-position: center;
   grid-row: 3/6;
 }
+.video_main{
+  bottom: 10vw;
+  position: absolute;
+}
 
 /*aside*/
 .container_aside{
@@ -224,7 +228,7 @@ color: var(--color_main);
   display: none;
   margin: 0;
   overflow: hidden;
-  margin-left: 2vw;
+  margin-left: 4vw;
   color: var(--color_fondo3);
   font-family: "rooney-web", serif;
   font-weight: 700;
