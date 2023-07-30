@@ -161,7 +161,7 @@ color: var(--color_main);
   grid-row: 3/6;
 }
 .video_main{
-  bottom: 10vw;
+  bottom: 7.5vw;
   position: absolute;
 }
 
