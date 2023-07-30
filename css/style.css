@@ -136,7 +136,7 @@ color: var(--color_main);
   text-align: center;
   display: block;
   overflow: hidden;
-white-space: nowrap;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
@@ -221,7 +221,7 @@ white-space: nowrap;
 
 
  .link_aside{
-  display: block;
+  display: none;
   margin: 0;
   overflow: hidden;
   margin-left: 2vw;
@@ -233,31 +233,39 @@ white-space: nowrap;
 
 
 
-.relacionados{
-position: relative;
-color: var(--color_fondo3);
-font-size: medium;
-top: 1%;
-
-}
-
-.relacionados_letra{
-display: block;
+.juegos{
+  position: absolute; 
+  color: var(--color_fondo3);
+  font-size: medium;
+  bottom: 0;
 }
 
 
 
+.super_logo{
+  
+  height: 40%;
+  width: 80%;
+  position: flex;
+  background-image: url(../img/rnlogo6.png);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat; 
+  display: none;
+}
 
 /*hover aside*/
 .container_aside:hover {
   width: 20%;
 }
 
-.container_aside:hover > .relacionados{
+.container_aside:hover > .super_logo{
   display: flex;
-  }
+}
 
-
+.container_aside:hover > .bloque a{
+  display: block;
+}
 
 /*Footer*/
 .container_footer{
