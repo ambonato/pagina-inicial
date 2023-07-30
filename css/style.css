@@ -98,8 +98,8 @@ color: var(--color_main);
 /*nav*/
 .container_nav{
   display: flex;
-  grid-template-columns:1fr 1fr;
-  grid-template-rows: 10vh;  
+  /* grid-template-columns:1fr 1fr;
+  grid-template-rows: 10vh;   */
   grid-column: 3/5;
   grid-row: 2/3;
   width: 100%;
@@ -189,10 +189,10 @@ color: var(--color_main);
   background-position: center;
   grid-row: 3/6;
 }
-.video_main{
+/* .video_main{
   bottom: 7.5vw;
   position: absolute;
-}
+} */
 
 /*aside*/
 .container_aside{
@@ -229,7 +229,7 @@ color: var(--color_main);
 
 .bloque_img1{
 
-  background-image: url(/Test/img/regnum.png);
+  background-image: url(../img/regnum.png);
 }
 .bloque_img2{
   background-image: url(../img/guildwars.png);
@@ -307,4 +307,63 @@ color: var(--color_main);
   grid-row: 6/7;
   color: #000000;
   background: linear-gradient(to left, var(--color_fondo3), var(--color_fondo4)) ; 
+}
+
+@media screen and (max-width:750px){
+
+  .container_main{
+    grid-column: 1/span 5;
+    /* background-image: url(../img/gamerheart.png);
+    background-repeat: no-repeat;
+    background-position: center; */
+    grid-row: 3/6;
+
+}
+
+.container_nav{
+  grid-column: 1/6;
+  grid-row: 3/4;
+}
+
+.container_titulo{
+  grid-column: 1/5;
+  grid-row: 2/3;
+}
+
+.container_footer{
+  display: none;
+}
+/*nav menu movil*/
+.links{
+  display: flex;
+  margin:0.5vw ;
+ /* border: solid black;
+  width: 6vw;*/
+  justify-content: center;
+  align-items: center;
+  
+}
+.links a{
+  position: relative;
+  border: solid var(--color_main);
+  width: 15vw;
+  color: var(--color_main);
+  border-radius: 0;
+  /* padding: 10px; */
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  box-shadow:  10px 5px 5px var(--color_main);
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+}
+
+/*aside movil*/
+
+
+.container_aside {
+  display: none;
+}
 }
